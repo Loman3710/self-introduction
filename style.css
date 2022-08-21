@@ -1,0 +1,72 @@
+body{
+    background-color: #f49fdb;
+}
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+.site-name{
+    margin: 0;
+    font-family: 'HS-Regular', sans-serif;
+    font-size: 55px;
+    color: blueviolet;
+
+}
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 100px;
+}
+#profile-picture{
+    width: 400px;
+    margin-right: 60px;   
+}
+
+.introduction>h2{
+    margin: 0px;
+    font-family: 'TTCrownMychewR', sans-serif;
+    font-size: 55px;
+}
+
+.introduction>p{
+    margin: 0px;
+    padding-top: 30px;
+    font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+@font-face {
+    font-family: 'TTCrownMychewR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.comment{
+  font-family:'ONE-Mobile-POP';  
+  font-weight: 10px;
+  font-size: 50px;
+}
+a:hover{
+    color:aliceblue;
+    transition: 0.3%
+}
