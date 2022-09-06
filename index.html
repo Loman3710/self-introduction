@@ -1,26 +1,37 @@
+<!-- !누르고 엔터 누르면 자동으로 기본 설정이 나옴--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>START</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <style type="text/css" media="screen, print">
-        @font-face {
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>START</title>
+  <!-- 링크거는 주소 텍스트 밑에 밑줄이 있어야 링크가 걸림
+      조금 더 깔끔하게 보이기 위해 css는 따로 만들었음-->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <style type="text/css" media="screen, print">
+    /* https:noonnu.cc 폰트 싸이트입니다. "눈누"라고 검색 하셔도 됩니다. */
+    @font-face {
     font-family: 'HS-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
-}
-    </style>
+    }
+  </style>
 </head>
 <body>
-    <div class="frame">
-    <img src= cha.png usemap=#giraffe style="margin-left: auto; margin-right: auto; display: block;" width="800">
-    <map name= giraffe>
-        <area shape= rect coords="142,151,825,869" href="myslef.html">
-    </map>
-    <h1> Welcome to Giraffe world</h1>
-    </div>
+  <div class="frame">
+    <!-- <a> <img src=cha.png>를 할경우 이미 전체를 누르면 링크가 걸리지만 아래의 태그를 이용하면 특정 위치를 누르면 링크 페이지로 넘어갈 수 있음-->
+    <img src="cha.png" usemap= #giraffe style="margin-left: auto; margin-right: auto; display: block; width: 800;">
+    <!-- <usemap> 지도를 사용한다는 뜻으로 마치 그림을 지도로 표현. 그리고 지도 이름을 쓴다. #giraffe -->
+    <map name="giraffe">
+      <!-- area-영역 rect-사각형 coords-좌표 -->
+      <area shape="rect" coords="142,151,825,869" href="myslef.html">
+      <!-- 내가 링크 걸고 싶은 그림 위치를 파악하기(그림판에서 링크 걸고 싶은 곳에 네모 or 동그라미 설정 후 맨 왼쪽 상단, 맨 오르쪽 하단 좌표를 적습니다. )-->
+    </map>  
+    <!-- div와 span의 차이: div태그는 block, span태그는 inline
+         쉽게 말해 div태그는 줄바꿈이 되지만, span 태그는 줄바꿈이 되지 않음 -->
+    <span> Welcome to Giraffe world</span>
+  </div>
     
+
 </body>
 </html>

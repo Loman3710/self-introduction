@@ -1,14 +1,20 @@
 body{
     background-color: rgb(247, 237, 45);
-    
-}
-h1{
     text-align: center;
     font-family: 'HS-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 90px;
+  }
+span{
+    /*윗 글자가 잘리는 현상이 생겨 padding 값을 주어 text 전체가 보이게 했음  */
+    padding-top: 30px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    -webkit-text-fill-color: transparent;
+    /* 글씨체를 투명으로 바꿈 */
+    -webkit-background-clip: text;
+    /* text 오려내기!  text에 그라데이션 효과 넣기 끝*/
 }
 
 @font-face {
